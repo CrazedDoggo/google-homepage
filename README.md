@@ -4,4 +4,4 @@ After returning from a vacation, I decided to fully structure my learning path f
 WebDev using both OSSU and P1XT. I will be uploading my projects and storing what I've learned
 to add to my portfolio site once it is created.
 
-Overall, this was a warmup and a refresher for HTML/CSS.
+Overall, this was a warmup and a refresher for HTML/CSS. You can view the live site [here](https://crazeddoggo.github.io/google-homepage/).
