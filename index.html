@@ -6,83 +6,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="reset/styles.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <nav class = "gap">
-            <ul class="nav-left">
-                <li>
-                    <a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a>
-                </li>
-                <li>
-                    <a href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a>
-                </li>
-            </ul>
-            <ul class="nav-right">
-                <li>
-                    <a href="https://mail.google.com/mail/u/0/">Gmail</a>
-                </li>
-                <li>
-                    <a href="https://www.google.com/imghp?hl=en&ogbl">Images</a>
-                </li>
-                <li>
-                    <button><span class="material-icons">apps</span>
-                    </button>
-                </li>
-                <li>
-                    <button><span class="material-icons">account_circle</span>
-                    </button>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <div class="site-grid"> 
+        <header>
+            <nav class = "gap">
+                <ul class="nav-left">
+                    <li>
+                        <a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a>
+                    </li>
+                    <li>
+                        <a href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a>
+                    </li>
+                </ul>
+                <ul class="nav-right">
+                    <li>
+                        <a href="https://mail.google.com/mail/u/0/">Gmail</a>
+                    </li>
+                    <li>
+                        <a href="https://www.google.com/imghp?hl=en&ogbl">Images</a>
+                    </li>
+                    <li class = "nav-button-list">
+                        <button class = "nav-button"><span class="material-icons">apps</span>
+                        </button>
+                    </li>
+                    <li class = "nav-button-list">
+                        <button class = "nav-button"><span class="material-icons">account_circle</span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-        <div class="logo">
-            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
-        </div>
-        <div class="search-box">
-            <span class="material-icons-outlined">search</span>
-            <input type="search" name="search_req" id="search_req" aria-label="Search through Google">  
-        </div>
-        <div class="boxes">
-            <button class="search-box">Google Search</button>
-            <button class="search-box">I'm Feeling Lucky</button>
-        </div>
-    </main>
+        <main>
+            <div class="wrapper">
+                <div class="logo">
+                    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
+                </div>
+                <div class="search-box">
+                    <span class="material-icons">search</span>
+                    <input type="search" name="search_req" id="search_req" aria-label="Search through Google">  
+                </div>
+                <div class="boxes">
+                    <button class="search-button">I'm Feeling Lucky</button>
+                    <button class="search-button">Google Search</button>
+                </div>
+            </div>
+        </main>
 
-    <footer>
-        <ul class="footer-list">
-            <li>
-                <a href="">Advertising</a>
-            </li>
-            <li>
-                <a href="">Business</a>
-            </li>
-            <li>
-                <a href="">How Search works</a>
-            </li>
-        </ul>
-        <span class="footer-middle">
-            <a href="">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC" alt="Green leaf">
-                Carbon neutral since 2007
-            </a>
-        </span>
-        <ul class="footer-list">
-            <li>
-                <a href="">Privacy</a>
-            </li>
-            <li>
-                <a href="">Terms</a>
-            </li>
-            <li>
-                <a href="">Settings</a>
-            </li>
-        </ul>
-    </footer>
+        <footer>
+            <div class="footer-left">
+                <ul class="footer-list">
+                    <li>
+                        <a href="">Advertising</a>
+                    </li>
+                    <li>
+                        <a href="">Business</a>
+                    </li>
+                    <li>
+                        <a href="">How Search works</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <p class="footer-middle">
+                <a href="" class = "footer-middle-grid">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC" alt="Green leaf">
+                    <span>Carbon neutral since 2007</span>
+                </a>
+            </p>
+            <div class="footer-right">
+                <ul class="footer-list">
+                    <li>
+                        <a href="">Privacy</a>
+                    </li>
+                    <li>
+                        <a href="">Terms</a>
+                    </li>
+                    <li>
+                        <a href="">Settings</a>
+                    </li>
+                </ul>   
+            </div>         
+        </footer>
+    </div>
 </body>
 </html>
